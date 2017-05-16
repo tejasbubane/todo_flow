@@ -12,12 +12,12 @@ type State = {
 }
 
 class App extends React.Component {
-  todoCount =  0
-
-  state = {
+  state: State = {
     todos: [],
     currentFilter: "SHOW_ALL"
   }
+
+  todoCount =  0
 
   addTodo = (text: string): void => {
     let newTodo: TodoType = {
