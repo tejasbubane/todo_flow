@@ -51,7 +51,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{"margin-left": "50px", "margin-top": "50px"}}>
         <h2>TODO with Flow</h2>
         <TodoInput addTodo={this.addTodo}/>
         <TodoList todos={this.state.todos} toggleTodo={this.toggleTodo}
